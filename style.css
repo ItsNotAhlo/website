@@ -1,4 +1,12 @@
 /* My css file based on Catppuccin */
+/* Colors */
+:root {
+  --crust: #11111b;
+  --base: #1e1e2e;
+  --surface0: #313244;
+  --text: #cdd6f4;
+  --mantle: #181825;
+}
 body {
   font-family:Arial, Helvetica, sans-serif;
   background-color: #24273a;
@@ -8,8 +16,8 @@ body {
 header {
   padding: 30px;
   text-align: center;
-  background: #181825;
-  color: #cdd6f4;
+  background: var(--mantle);
+  color: var(--text);
 }
 header h1 {
   font-size: 60px;
@@ -17,13 +25,32 @@ header h1 {
 header p {
   padding-top: 0px;
 }
+header ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  /* background-color: var(--crust); */
+}
+header li {
+  float: center;
+  padding: 4px 8px;
+  display: inline;
+}
+header li a {
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--text);
+}
 /* Nav bar stuff */
 nav ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color: #11111b;
+  background-color: var(--crust);
 }
 nav li {
   float: left;
@@ -34,8 +61,8 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: #cdd6f4;
-  background-color: #11111b;
+  color: var(--text);
+  background-color: var(--crust);
 }
 nav li a:hover:not(.active) {
   background-color: #89b4fa;
@@ -46,42 +73,50 @@ li a.active {
 }
 /* Div Styling */
 div {
-  color: #cdd6f4;
+  color: var(--text);
   margin-left: 10px;
   margin-right: 10px;
 }
 div.post {
-  background-color: #1e1e2e;
+  background-color: var(--base);
   font-size: 20px;
   /* margin-bottom: 0px; */
 }
 div h2 {
-  background-color: #1e1e2e;
+  background-color: var(--base);
   padding: 15px;
   font-size: 25px;
   margin-bottom: 0px;
 }
+div h3 {
+  background-color: var(--base);
+  font-size: 20px;
+  margin-bottom: 0px;
+}
 div p {
-  background-color: #313244;
+  background-color: var(--surface0);
   padding: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 div ul {
-  background-color: #313244;
+  background-color: var(--surface0);
   padding: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+div ul i {
+  font-size: 50px;
+}
 div li {
-  background-color: #313244;
+  background-color: var(--surface0);
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 15px;
 }
 /* Footer styling */
 footer {
-  background-color: #11111b;
+  background-color: var(--crust);
   margin-top: 15px;
 }
 footer ul {
@@ -89,16 +124,25 @@ footer ul {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color: #11111b;
+  background-color: var(--crust);
 }
-footer li {
+footer li.left {
   border-right: 1px solid #bbb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: #cdd6f4;
+  color: var(--text);
   float: left;
+}
+footer li.right {
+  border-left: 1px solid #bbb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--text);
+  float: right;
 }
 /* Link colors are stupid */
 div a:visited {
