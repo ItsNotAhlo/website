@@ -34,7 +34,7 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: white;
+  color: #cdd6f4;
   background-color: #11111b;
 }
 nav li a:hover:not(.active) {
@@ -46,19 +46,19 @@ li a.active {
 }
 /* Div Styling */
 div {
-  color: white;
+  color: #cdd6f4;
   margin-left: 10px;
   margin-right: 10px;
 }
 div.post {
   background-color: #1e1e2e;
   font-size: 20px;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 div h2 {
   background-color: #1e1e2e;
   padding: 15px;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 0px;
 }
 div p {
@@ -82,7 +82,7 @@ div li {
 /* Footer styling */
 footer {
   background-color: #11111b;
-  bottom: 0px;
+  margin-top: 15px;
 }
 footer ul {
   list-style-type: none;
@@ -97,7 +97,7 @@ footer li {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: white;
+  color: #cdd6f4;
   float: left;
 }
 /* Link colors are stupid */
